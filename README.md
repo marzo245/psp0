@@ -82,6 +82,10 @@ Para compilar y empaquetar el código fuente en un `.jar`:
 mvn package
 ```
 El archivo resultante se encontrará en la carpeta `target/`.
+
+![alt text](image-9.png)
+
+![alt text](image-10.png)
 ---
 ### 📦 Configuracion adcional para ignorar los /target en los commit
 Muchas veces no es necesario subir nuestros .class ya que estos suelen ocupar espacio inecesario en nuestros repositorios, por lo que acudimos a el .gitignore para evitar siempre que hagamos un commit estar subiendo estos.
@@ -120,7 +124,3 @@ Este proyecto está bajo la licencia GNU.
 
 ---
 
-¡Listo! Con este README, cualquiera podrá replicar el proceso y conectar su proyecto Maven con GitHub sin problemas. 🚀
-```
-
-Espero que esto sea justo lo que necesitabas. ¡Déjame saber si quieres que agregue algo más! 😊
