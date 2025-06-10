@@ -18,6 +18,17 @@ mvn archetype:generate -DgroupId=com.ejemplo -DartifactId=mi-proyecto -Darchetyp
 ```
 Esto generará una estructura básica para tu proyecto.
 
+
+Commando usado
+![alt text](image-2.png)
+
+Evidencia compilación
+![Imagen](image-1.png)
+
+Como queda el arbol al final
+
+![alt text](image-3.png)
+
 ---
 
 ## 🔧 Inicializar Git y conectar con GitHub
@@ -43,6 +54,26 @@ Esto generará una estructura básica para tu proyecto.
    git push -u origin main
    ```
 
+6. **Revisamos el estado de 
+como quedó todo**:
+
+   ```sh 
+   git status
+   ```
+ ![alt text](image-4.png)
+
+ En este caso se ve que el estado es correcto ademas de que, faltan por subir nuevos cambios los cuales fueron generados debido a que este readme fue realizado mientras se tomaban evidencias
+
+ pero basta con hacer un commit y revisar de nuevo el status
+
+ ![alt text](image-5.png)
+
+ y ahora revisamos de nuevo el status, para esto primero hacemos un git push
+ ![alt text](image-6.png)
+
+ y seguido de esto revisamos el status
+
+ ![alt text](image-7.png)
 ---
 
 ## 📦 Construcción y empaquetado del proyecto
@@ -51,10 +82,28 @@ Para compilar y empaquetar el código fuente en un `.jar`:
 mvn package
 ```
 El archivo resultante se encontrará en la carpeta `target/`.
+---
+### 📦 Configuracion adcional para ignorar los /target en los commit
+Muchas veces no es necesario subir nuestros .class ya que estos suelen ocupar espacio inecesario en nuestros repositorios, por lo que acudimos a el .gitignore para evitar siempre que hagamos un commit estar subiendo estos.
+Para esto hacemos uso de lo siguiente en nuestro .gitignore 
 
+![alt text](image-8.png)
+
+En esta evidenciamos, en la ultima linea que se agreag el target/
+Esto lo que hace es ignorar la carpeta target y su contenido a la hora del versionamiento.
 ---
 ## 📦 Evidencias
 Estas estaran en un word con los pantallazos correspondientes
+
+### Crendo un Proyecto
+Evidencia de compilacion de creacion de packetes con commando
+
+
+Aqui evidenciamos el como compilo correctamente el packete de maven con el comando mvn package
+
+![Imagen 1](image.png)
+
+
 
 ## ✅ Ejecutar el proyecto
 Para ejecutar la aplicación generada:
